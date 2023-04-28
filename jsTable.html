@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Table</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        //creating table and rows
+        let table = document.createElement('table');
+        // console.log(table);
+        let tableRow = document.createElement('tr');
+        // console.log(tableRow);
+        let tableNameHeading = document.createElement('th');
+        // console.log(tableHeading);
+        let tableAgeHeading = document.createElement('th');
+
+
+
+
+        // css
+        table.style.border = '1px solid black';
+        table.style.borderCollapse = 'collapse';
+
+        tableRow.style.border = '1px solid black';
+        tableRow.style.borderCollapse = 'collapse';
+
+        tableNameHeading.style.border = '1px solid black';
+        tableAgeHeading.style.borderCollapse = 'collapse';
+
+
+        //creating heading
+        tableNameHeading.innerHTML = "Age";
+        tableAgeHeading.innerHTML = "Name";
+
+        tableRow.appendChild(tableAgeHeading)
+        tableRow.appendChild(tableNameHeading)
+
+        table.appendChild(tableRow)
+
+        //css
+        tableNameHeading.style.backgroundColor = "#D3D3D3";
+        tableAgeHeading.style.backgroundColor = "#D3D3D3";
+
+        tableAgeHeading.style.textAlign = "left";
+        tableNameHeading.style.textAlign = "left";
+
+        tableAgeHeading.style.width = "200px";
+        tableNameHeading.style.width = "200px";
+
+
+
+
+
+        //creating first name
+        let chris = document.createElement('tr');
+        let chrisNameCell = document.createElement('td');
+        let chrisAgeCell = document.createElement('td');
+
+        chrisNameCell.innerHTML = "Chris";
+        chrisAgeCell.innerHTML = "38";
+
+        chris.appendChild(chrisNameCell);
+        chris.appendChild(chrisAgeCell);
+
+        //css
+        chrisNameCell.style.backgroundColor = "rgb(232, 227, 227)";
+        chrisAgeCell.style.textAlign = "right";
+
+        chrisNameCell.style.border = '1px solid black';
+        chrisNameCell.style.borderCollapse = 'collapse';
+
+        chrisAgeCell.style.border = '1px solid black';
+        chrisAgeCell.style.borderCollapse = 'collapse';
+
+        table.appendChild(chris); //adding to the table
+        //first name ends
+
+
+
+
+
+        //creating second name
+        let dennis = document.createElement('tr');
+        let dennisNameCell = document.createElement('td');
+        let dennisAgeCell = document.createElement('td');
+
+        dennisNameCell.innerHTML = "Dennis";
+        dennisAgeCell.innerHTML = "45";
+
+        dennis.appendChild(dennisNameCell);
+        dennis.appendChild(dennisAgeCell);
+
+        //css
+        dennisNameCell.style.backgroundColor = "rgb(232, 227, 227)";
+        dennisAgeCell.style.textAlign = "right";
+
+        dennisNameCell.style.border = '1px solid black';
+        dennisNameCell.style.borderCollapse = 'collapse';
+
+        dennisAgeCell.style.border = '1px solid black';
+        dennisAgeCell.style.borderCollapse = 'collapse';
+
+
+        table.appendChild(dennis); //adding to the table
+        //second name ends
+
+
+
+
+
+        //creating third name
+        let sarah = document.createElement('tr');
+        let sarahNameCell = document.createElement('td');
+        let sarahAgeCell = document.createElement('td');
+
+        sarahNameCell.innerHTML = "Sarah";
+        sarahAgeCell.innerHTML = "29";
+
+        sarah.appendChild(sarahNameCell);
+        sarah.appendChild(sarahAgeCell);
+
+        //css
+        sarahNameCell.style.backgroundColor = "rgb(232, 227, 227)";
+        sarahAgeCell.style.textAlign = "right";
+
+        sarahNameCell.style.border = '1px solid black';
+        sarahNameCell.style.borderCollapse = 'collapse';
+
+        sarahAgeCell.style.border = '1px solid black';
+        sarahAgeCell.style.borderCollapse = 'collapse';
+
+        table.appendChild(sarah); //adding to the table
+        //third name ends
+
+
+
+
+
+        //creating fourth name
+        let karen = document.createElement('tr');
+        let karenNameCell = document.createElement('td');
+        let karenAgeCell = document.createElement('td');
+
+        karenNameCell.innerHTML = "Karen";
+        karenAgeCell.innerHTML = "47";
+
+        karen.appendChild(karenNameCell);
+        karen.appendChild(karenAgeCell);
+
+        //css
+        karenNameCell.style.backgroundColor = "rgb(232, 227, 227)";
+        karenAgeCell.style.textAlign = "right"
+
+        karenNameCell.style.border = '1px solid black';
+        karenNameCell.style.borderCollapse = 'collapse';
+
+        karenAgeCell.style.border = '1px solid black';
+        karenAgeCell.style.borderCollapse = 'collapse';
+        //fourth name ends
+
+
+        table.appendChild(karen); //adding to the table
+
+        //adding to the parent class of the table which is document
+        document.body.appendChild(table);
+    </script>
+</body>
+
+</html>
